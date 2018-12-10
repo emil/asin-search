@@ -136,5 +136,22 @@ class Amazon::ProductParserTest < ActiveSupport::TestCase
 
     assert product.valid?
   end
-  
+
+  # #detail-bullets > table > tbody > tr > td > div.content > ul >
+  test "read details as css id detail-bullets" do
+    product_file = read_fixture_file('B00HXGSBXC')
+    product = Amazon::ProductParser.new(product_file, 'B00HXGSBXC').product
+
+    assert_equal 'B00HXGSBXC', product.asin
+    assert_equal 'RoyalBaby BMX Freestyle Kid\'s Bike, 12-14-16-18-20 inch wheels, six colors available', product.title
+    assert_equal 'Sports & Outdoors Outdoor Recreation Cycling Kids\' Bikes & Accessories Kids\' Bikes', product.category
+    assert_equal 'https://images-na.ssl-images-amazon.com/images/I/817ru30ZLEL._SL1500_.jpg', product.image_url
+    # expect product dimensions
+    assert_equal [
+      ['Product Dimensions', '35 x 19 x 25 inches ; 19 pounds'],
+      ["Amazon Best Sellers Rank", "#189 in Sports & Outdoors, #1 in Sports & Outdoors > Outdoor Recreation > Cycling > Kids' Bikes & Accessories > Kids' Bikes, #1 in Amazon Launchpad > Gadgets > Sports & Outdoors, #1 in Sports & Outdoors > Outdoor Recreation > Cycling > Kids' Bikes & Accessories > Kids' Balance Bikes"]
+    ], product.product_details.map {|d| [d.label, d.value]}
+
+    assert product.valid?
+  end
 end

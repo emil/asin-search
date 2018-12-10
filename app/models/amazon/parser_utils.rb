@@ -16,7 +16,6 @@ module Amazon::ParserUtils
   end
 
   # Some values require additional formatting
-  
   def format_details_value(label, value)
     if is_sellers_rank?(label)
       return format_sellers_rank_value(value)
@@ -24,13 +23,13 @@ module Amazon::ParserUtils
     value
   end
 
-  # sellers rank, reformat; loose the '(See Top 100)' and add the space character
+  # sellers rank, reformat; remove the '(See Top 100)' and add the space character
   # before the 'in' in case it got lost. For example : '#100in Books' => '#100 in Books'
   # additionally add ', ' before the segments (split by '#')
   def format_sellers_rank_value(value)
     formatted_value = value.gsub(/\s*\([^\)]*\)\s*/, '').gsub /#(\d+)in/, '#\1 in'
     formatted_value = formatted_value.split('#')
-    formatted_value.shift # loose first element ""
+    formatted_value.shift # remove first element ""
     formatted_value = '#' + formatted_value.join(', #')
     
     log.info "Formatting 'Sellers Rank' '#{value}' to '#{formatted_value}'"

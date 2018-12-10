@@ -42,12 +42,14 @@ module Amazon
     CSS_PROD_DETAILS = '#prodDetails > div.wrapper > div.column > div > div.content > div > div > table tr'.freeze
 
     CSS_PRODUCT_DETAILS_TABLE = '#productDetailsTable div.content ul > li'.freeze
+    CSS_DETAIL_BULLETS = '#detail-bullets > table tr > td > div.content > ul > li'.freeze
     
     # Mapping CSS Selector => parser class.
     DETAILS_PARSERS = {
       CSS_PROD_DET_TABLE => Amazon::CssProdDetTableParser,
       CSS_PROD_DETAILS   => Amazon::CssProdDetailsParser,
-      CSS_PRODUCT_DETAILS_TABLE => Amazon::CssProductDetailsTableParser
+      CSS_PRODUCT_DETAILS_TABLE => Amazon::CssProductDetailsTableParser,
+      CSS_DETAIL_BULLETS => Amazon::CssProductDetailsTableParser
     }.freeze
 
     # Read product details, try different strategies / different product layout pages.

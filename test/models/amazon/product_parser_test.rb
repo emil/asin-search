@@ -118,4 +118,23 @@ class Amazon::ProductParserTest < ActiveSupport::TestCase
     assert product.valid?
   end
 
+  # parsing test html with binary zeros 
+  test "read details html has binary zeros" do
+    product_file = read_fixture_file('B00005C5H4')
+    assert_match /\x00/, product_file # binary zeros
+    product = Amazon::ProductParser.new(product_file).product
+
+    assert_equal 'B00005C5H4', product.asin
+    assert_equal 'The First Years Stack Up Cups', product.title
+    assert_equal 'Toys & Games Baby & Toddler Toys Stacking & Nesting Toys', product.category
+    assert_equal 'https://images-na.ssl-images-amazon.com/images/I/51R0kZwuwbL._SL1000_.jpg', product.image_url
+    # expect product dimensions
+    assert_equal [
+      ['Product Dimensions', '3.5 x 3.2 x 2.5 inches'],
+      ["Best Sellers Rank", "#1 in Baby, #1 in Toys & Games >Baby & Toddler Toys >Stacking & Nesting Toys, #5 in Toys & Games >Preschool"]
+    ], product.product_details.map {|d| [d.label, d.value]}
+
+    assert product.valid?
+  end
+  
 end

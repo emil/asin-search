@@ -49,9 +49,6 @@ module Amazon::ParserUtils
     value.split.join(' ')
   end
 
-  def format_rank_value(label, value)
-  end
-  
   def log
     ActiveRecord::Base.logger
   end

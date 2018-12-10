@@ -81,9 +81,9 @@ module Amazon
       nil
     end
 
-    # remove 'style' and 'script' nodes
+    # remove 'style' and 'script' nodes, newlines, whitespace and binary zeros
     def parse_html(html)
-      cleaned = html.gsub(/\n/, '').gsub(/>\s*</m, '><')
+      cleaned = html.gsub(/\n/, '').gsub(/>\s*</m, '><').gsub /\x00/, ''
       doc = Nokogiri::HTML(cleaned, nil, nil, Nokogiri::XML::ParseOptions.new.default_html.noblanks)
       # remove all 'script' and 'style' nodes from the document
       doc.css('style').each {|n| n.remove }

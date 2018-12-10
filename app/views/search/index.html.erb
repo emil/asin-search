@@ -1,0 +1,29 @@
+<div class="ui raised segment">
+  <h1 class="ui header"><%= params[:query] %> (<%= @products.count %> results)</h1>  
+  <div class="ui divider"></div>
+  <div class="ui divided link items">
+    <% @products.each do |product| %>
+      <a class="item" href="<%= product_path(product) %>">
+        <div class="small image">
+          <img src="<%= product_image(product) %>">
+        </div>
+        <div class="content">
+          <div class="header"><%= product.title %></div>
+          <div class="meta">
+            <span><%= product.asin %></span>
+          </div>
+          <div class="description">
+            <p><%= truncate product.category, length: 250 %></p>
+          </div>
+          <div class="extra">
+            <div class="ui right floated primary button">
+              View More
+              <i class="right chevron icon"></i>
+            </div>
+            <div class="ui label"><i class="yellow star icon"></i> <%= product.ranking %> Ranking</div>
+          </div>
+        </div>
+      </a>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+---
+User_1:
+  id: 1
+  login: seller
+  account_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-12-10 09:49:30.712704000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-12-10 09:49:30.712704000 Z
+    zone: *2
+    time: *3
+
+---
+User_2:
+  id: 2
+  login: seller
+  account_id: 2
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-12-10 09:54:03.935566000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-12-10 09:54:03.935566000 Z
+    zone: *2
+    time: *3
+

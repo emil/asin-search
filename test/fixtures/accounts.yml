@@ -1,0 +1,28 @@
+---
+Account_1:
+  id: 1
+  name: Acme Corporation
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-12-10 09:49:30.704002000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-12-10 09:49:30.704002000 Z
+    zone: *2
+    time: *3
+
+---
+Account_2:
+  id: 2
+  name: Acme Corporation
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-12-10 09:54:03.925495000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-12-10 09:54:03.925495000 Z
+    zone: *2
+    time: *3
+

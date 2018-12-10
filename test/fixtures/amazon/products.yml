@@ -1,0 +1,116 @@
+---
+Amazon::Product_1:
+  id: 1
+  asin: B010TQY7A8
+  title: Exploding Kittens Card Game
+  category: Toys & Games Games Card Games
+  image_url: https://images-na.ssl-images-amazon.com/images/I/91mSHaL6oEL._SL1500_.jpg
+  account_id: 1
+  user_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-12-10 09:49:30.780560000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-12-10 09:49:30.780560000 Z
+    zone: *2
+    time: *3
+
+---
+Amazon::Product_2:
+  id: 2
+  asin: B00UZKG8QU
+  title: G-Technology G-RAID USB Removable Dual Drive Storage System 8TB (0G04069)
+  category: Electronics Computers & Accessories Data Storage
+  image_url: https://images-na.ssl-images-amazon.com/images/I/41zDevK42BL._SY300_QL70_.jpg
+  account_id: 1
+  user_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-12-10 09:49:30.856632000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-12-10 09:49:30.856632000 Z
+    zone: *2
+    time: *3
+
+---
+Amazon::Product_3:
+  id: 3
+  asin: B0046UR4F4
+  title: G-Technology G-SPEED eS PRO High-Performance Fail-Safe RAID Solution for
+    HD/2K Production 8TB (0G01873)
+  category: Electronics Computers & Accessories Data Storage External Hard Drives
+  image_url: https://images-na.ssl-images-amazon.com/images/I/717HFf5wbWL._SL1248_.jpg
+  account_id: 1
+  user_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-12-10 09:49:30.903737000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-12-10 09:49:30.903737000 Z
+    zone: *2
+    time: *3
+
+---
+Amazon::Product_4:
+  id: 4
+  asin: B0753H4B6M
+  title: HappySUN Pack of 2 Green Lettuce Artificial Lifelike Simulation PU Artificial
+    Vegetables Fake Vegetable Home Kitchen Cabinet Decoration (2, Green Lettuce)
+  category: Home & Kitchen Home Décor Artificial Plants & Flowers Artificial Vegetables
+  image_url: https://images-na.ssl-images-amazon.com/images/I/51E8k60wERL._SL1000_.jpg
+  account_id: 1
+  user_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-12-10 09:49:30.958215000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-12-10 09:49:30.958215000 Z
+    zone: *2
+    time: *3
+
+---
+Amazon::Product_5:
+  id: 5
+  asin: '1250103509'
+  title: 'Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity'
+  category: Books Business & Money Business Culture
+  image_url: https://images-na.ssl-images-amazon.com/images/I/411O8D1w2UL._SY291_BO1,204,203,200_QL40_.jpg
+  account_id: 1
+  user_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-12-10 09:49:31.046000000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-12-10 09:49:31.046000000 Z
+    zone: *2
+    time: *3
+
+---
+Amazon::Product_6:
+  id: 6
+  asin: B002QYW8LW
+  title: Baby Banana Infant Training Toothbrush and Teether, Yellow
+  category: Baby Products Baby Care Pacifiers, Teethers & Teething Relief Teethers
+  image_url: https://images-na.ssl-images-amazon.com/images/I/71vLVbAlWXL._SL1500_.jpg
+  account_id: 1
+  user_id: 1
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-12-10 09:49:31.151203000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-12-10 09:49:31.151203000 Z
+    zone: *2
+    time: *3
+

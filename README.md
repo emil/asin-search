@@ -60,7 +60,7 @@ no formal page format specification and Amazon has many product page layouts.
   consider database such as MySQL/Postgres etc.
 - User/Authentication / Permissions: is a placeholder only; eventual
  _production_  application would implement an actual authentication /
- authorization, sign-up. 
+ authorization.
 - In addition a _production_ version of the application requires defining the deployment
   model/process (containers, simple Capistrano deployment model or else)
   monitoring (Pingdom, log events - exceptions, user support etc)
@@ -69,9 +69,10 @@ no formal page format specification and Amazon has many product page layouts.
 
 ## Scaling
 If scraping Amazon on a large scale (millions of users), may consider
-horizontal scaling, hosting the app  in the cloud and load balancers.
+horizontal scaling, hosting the app in the cloud, configuring load balancers.
 Consider scaling with async, evented frameworks, message brokers etc 
 (Redis, Rabbit MQ, AWS Lambda etc) where it fits. 
-Also consider sharding the database and introduce read-only replicas.
+Also consider sharding the database and introduce read-only replicas, add
+caching such as memcache.
 In addition, Amazon may may be throttling screen scraping, and the specific 
 techniques may be needed such as : *User Agent* rotation, IP address rotation. 

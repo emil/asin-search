@@ -19,7 +19,7 @@ class Amazon::LookupTest < ActiveSupport::TestCase
   # parsing test '#prodDetails > div.wrapper > div.column.col1 > div > div.content > div > div > table tr'
   test "read details as css id prodDetails" do
 
-    stub_http_response('B002QYW8LW')
+    stub_http_request('B002QYW8LW')
     response_code, product = Amazon::Lookup::ASIN('B002QYW8LW')
     assert_equal 200, response_code
 
@@ -37,7 +37,7 @@ class Amazon::LookupTest < ActiveSupport::TestCase
   # parsing test CSS #productDetailsTable div.content ul > li
   test "read details as css id productDetailsTable" do
 
-    stub_http_response('1250103509')
+    stub_http_request('1250103509')
     response_code, product = Amazon::Lookup::ASIN('1250103509')
     assert_equal 200, response_code
 
@@ -52,11 +52,4 @@ class Amazon::LookupTest < ActiveSupport::TestCase
     ], product.product_details.map {|d| [d.label, d.value]}
   end
 
-
-  private
-  # stub HTTPClient response from Amazon product pages 'test/fixtures/files/'
-  def stub_http_response(asin)
-    HTTPClient.any_instance.stubs(:get)
-      .returns(stub('response', code: 200, body: read_fixture_file(asin)))
-  end
 end

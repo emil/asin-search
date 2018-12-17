@@ -10,6 +10,9 @@ class ProductsController < ApplicationController
   # GET /products/B0753H4B6M
   # GET /products/B0753H4B6M.json
   def show
+    if @product.blank?
+      not_found && return
+    end
   end
 
 

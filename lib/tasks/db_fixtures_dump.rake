@@ -21,15 +21,17 @@ namespace :db do
 
         model_file = "#{Rails.root}/test/fixtures/#{m.to_s.underscore.pluralize}.yml"
         File.open(model_file, 'w') do |f|
-          entries.each do |a|
-            attrs = a.attributes
+
+          f << entries.inject({}) do |h,a|
+            attrs = a.attributes_before_type_cast
             attrs.delete_if{|k,v| v.blank?}
 
-            output = {m.to_s + '_' + increment.to_s => attrs}
-            f << output.to_yaml.gsub(/^--- \n/,'') + "\n"
+            h[m.to_s + '_' + increment.to_s] = attrs
 
             increment += 1
-          end
+            h
+          end.to_yaml
+          
         end
       end
     end

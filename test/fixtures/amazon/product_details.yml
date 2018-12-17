@@ -2,197 +2,122 @@
 Amazon::ProductDetail_1:
   id: 1
   label: Product Dimensions
-  value: 11.2 x 16.2 x 3.8 inches
+  value: 35 x 19 x 25 inches ; 19 pounds
   product_id: 1
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-12-10 09:49:30.781464000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-12-10 09:49:30.781464000 Z
-    zone: *2
-    time: *3
-
----
+  created_at: '2018-12-17 07:07:44.436997'
+  updated_at: '2018-12-17 07:07:44.436997'
 Amazon::ProductDetail_2:
   id: 2
-  label: Best Sellers Rank
-  value: "#14 in Toys & Games, #1 in Amazon Launchpad >Toys, #1 in Toys & Games >Games
-    >Card Games"
+  label: Amazon Best Sellers Rank
+  value: "#189 in Sports & Outdoors, #1 in Sports & Outdoors > Outdoor Recreation
+    > Cycling > Kids' Bikes & Accessories > Kids' Bikes, #1 in Amazon Launchpad >
+    Gadgets > Sports & Outdoors, #1 in Sports & Outdoors > Outdoor Recreation > Cycling
+    > Kids' Bikes & Accessories > Kids' Balance Bikes"
   product_id: 1
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-12-10 09:49:30.782020000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-12-10 09:49:30.782020000 Z
-    zone: *2
-    time: *3
-
----
+  created_at: '2018-12-17 07:07:44.437581'
+  updated_at: '2018-12-17 07:07:44.437581'
 Amazon::ProductDetail_3:
   id: 3
   label: Product Dimensions
-  value: 5.1 x 9.9 x 3.6 inches
+  value: 11.2 x 16.2 x 3.8 inches
   product_id: 2
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-12-10 09:49:30.857665000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-12-10 09:49:30.857665000 Z
-    zone: *2
-    time: *3
-
----
+  created_at: '2018-12-17 07:07:44.517304'
+  updated_at: '2018-12-17 07:07:44.517304'
 Amazon::ProductDetail_4:
   id: 4
   label: Best Sellers Rank
-  value: "#13,211 in Computers & Accessories >Data Storage"
+  value: "#14 in Toys & Games, #1 in Amazon Launchpad >Toys, #1 in Toys & Games >Games
+    >Card Games"
   product_id: 2
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-12-10 09:49:30.858179000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-12-10 09:49:30.858179000 Z
-    zone: *2
-    time: *3
-
----
+  created_at: '2018-12-17 07:07:44.518001'
+  updated_at: '2018-12-17 07:07:44.518001'
 Amazon::ProductDetail_5:
   id: 5
   label: Product Dimensions
-  value: 4.9 x 8.3 x 6.5 inches
+  value: 5.1 x 9.9 x 3.6 inches
   product_id: 3
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-12-10 09:49:30.904639000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-12-10 09:49:30.904639000 Z
-    zone: *2
-    time: *3
-
----
+  created_at: '2018-12-17 07:07:44.595439'
+  updated_at: '2018-12-17 07:07:44.595439'
 Amazon::ProductDetail_6:
   id: 6
   label: Best Sellers Rank
-  value: "#6,389 in Computers & Accessories >Data Storage >External Hard Drives"
+  value: "#13,211 in Computers & Accessories >Data Storage"
   product_id: 3
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-12-10 09:49:30.905212000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-12-10 09:49:30.905212000 Z
-    zone: *2
-    time: *3
-
----
+  created_at: '2018-12-17 07:07:44.596752'
+  updated_at: '2018-12-17 07:07:44.596752'
 Amazon::ProductDetail_7:
   id: 7
   label: Product Dimensions
-  value: 9.1 x 7.9 x 3.1 inches
+  value: 3.5 x 3.2 x 2.5 inches
   product_id: 4
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-12-10 09:49:30.959072000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-12-10 09:49:30.959072000 Z
-    zone: *2
-    time: *3
-
----
+  created_at: '2018-12-17 07:07:44.683578'
+  updated_at: '2018-12-17 07:07:44.683578'
 Amazon::ProductDetail_8:
   id: 8
   label: Best Sellers Rank
-  value: "#1,070,963 in Home & Kitchen, #104 in Home & Kitchen >Home Décor >Artificial
-    Plants & Flowers >Artificial Vegetables"
+  value: "#1 in Baby, #1 in Toys & Games >Baby & Toddler Toys >Stacking & Nesting
+    Toys, #5 in Toys & Games >Preschool"
   product_id: 4
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-12-10 09:49:30.959619000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-12-10 09:49:30.959619000 Z
-    zone: *2
-    time: *3
-
----
+  created_at: '2018-12-17 07:07:44.684042'
+  updated_at: '2018-12-17 07:07:44.684042'
 Amazon::ProductDetail_9:
   id: 9
   label: Product Dimensions
-  value: 6.4 x 1 x 9.5 inches
+  value: 4.9 x 8.3 x 6.5 inches
   product_id: 5
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-12-10 09:49:31.047290000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-12-10 09:49:31.047290000 Z
-    zone: *2
-    time: *3
-
----
+  created_at: '2018-12-17 07:07:44.721513'
+  updated_at: '2018-12-17 07:07:44.721513'
 Amazon::ProductDetail_10:
   id: 10
+  label: Best Sellers Rank
+  value: "#6,389 in Computers & Accessories >Data Storage >External Hard Drives"
+  product_id: 5
+  created_at: '2018-12-17 07:07:44.722002'
+  updated_at: '2018-12-17 07:07:44.722002'
+Amazon::ProductDetail_11:
+  id: 11
+  label: Product Dimensions
+  value: 9.1 x 7.9 x 3.1 inches
+  product_id: 6
+  created_at: '2018-12-17 07:07:44.772938'
+  updated_at: '2018-12-17 07:07:44.772938'
+Amazon::ProductDetail_12:
+  id: 12
+  label: Best Sellers Rank
+  value: "#1,070,963 in Home & Kitchen, #104 in Home & Kitchen >Home Décor >Artificial
+    Plants & Flowers >Artificial Vegetables"
+  product_id: 6
+  created_at: '2018-12-17 07:07:44.773414'
+  updated_at: '2018-12-17 07:07:44.773414'
+Amazon::ProductDetail_13:
+  id: 13
+  label: Product Dimensions
+  value: 6.4 x 1 x 9.5 inches
+  product_id: 7
+  created_at: '2018-12-17 07:07:44.842236'
+  updated_at: '2018-12-17 07:07:44.842236'
+Amazon::ProductDetail_14:
+  id: 14
   label: Amazon Best Sellers Rank
   value: "#981 in Books, #2 in Books > Business & Money > Management & Leadership
     > Management Science, #2 in Books > Business & Money > Business Culture > Workplace
     Culture, #3 in Books > Business & Money > Human Resources > Human Resources &
     Personnel Management"
-  product_id: 5
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-12-10 09:49:31.048177000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-12-10 09:49:31.048177000 Z
-    zone: *2
-    time: *3
-
----
-Amazon::ProductDetail_11:
-  id: 11
+  product_id: 7
+  created_at: '2018-12-17 07:07:44.842724'
+  updated_at: '2018-12-17 07:07:44.842724'
+Amazon::ProductDetail_15:
+  id: 15
   label: Product Dimensions
   value: 4.3 x 0.4 x 7.9 inches
-  product_id: 6
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-12-10 09:49:31.152693000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-12-10 09:49:31.152693000 Z
-    zone: *2
-    time: *3
-
----
-Amazon::ProductDetail_12:
-  id: 12
+  product_id: 8
+  created_at: '2018-12-17 07:07:44.916558'
+  updated_at: '2018-12-17 07:07:44.916558'
+Amazon::ProductDetail_16:
+  id: 16
   label: Best Sellers Rank
   value: "#83 in Baby, #5 in Baby > Baby Care > Pacifiers, Teethers & Teething Relief
     > Teethers, #14 in Baby > Baby Care > Health"
-  product_id: 6
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-12-10 09:49:31.153166000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-12-10 09:49:31.153166000 Z
-    zone: *2
-    time: *3
-
+  product_id: 8
+  created_at: '2018-12-17 07:07:44.917042'
+  updated_at: '2018-12-17 07:07:44.917042'

@@ -14,7 +14,7 @@ Amazon ASIN.
 
 ```
 rake db:test:prepare
-RAiLS_ENV=test rake db:fixtures:load
+RAILS_ENV=test rake db:fixtures:load
 rake
 ```
 (Models and Integration (FE) tests have been implemented.)

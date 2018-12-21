@@ -13,11 +13,21 @@ class Amazon::Product < ApplicationRecord
   
   def ranking
     labels = ['Amazon Best Sellers Rank','Best Sellers Rank']
-    product_details.where(label: labels).first&.value || 'Unknown'
+    product_details.find {|d| labels.include?(d.label) }&.value || 'Unknown'
   end
 
   def dimensions
-    product_details.where(label: 'Product Dimensions').first&.value || 'Unknown'
+    product_details.find {|d| d.label == 'Product Dimensions'}&.value || 'Unknown'
+  end
+
+  def to_fixture_yaml
+    [asin,
+     {title: title,
+      category: category,
+      image_url: image_url,
+      dimensions: dimensions,
+      ranking: ranking}
+    ].to_yaml
   end
   
   before_validation do
